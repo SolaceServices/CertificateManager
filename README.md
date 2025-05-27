@@ -8,7 +8,6 @@ These toools use the Solace Cloud API (V2). This tool uploads certicates and mak
 
 **IMPORTANT:** This code is NOT officially support Solace product. This tool was created by Mike O'Brien in the Solace Services team to augment Solace product, and is provided as an example. Do not contact the Solace support team to report any issues with this tool. 
 
-
 ## Requirements
 You need to have:
 1) A certificate file, in PEM format, with intermediate CAs inline as part of the file. The following is an example of the file format, with most of the content removed for brevity:
@@ -49,12 +48,11 @@ Token file found and loaded.
 Fetching all certs for the broker with service id 'juw0xswqqqee3' through the Solace Home Cloud API...
 1 certificates found on service juw0xswqqqee3
 
-Certificate #1:------------------------
+Certificate #1: - - - - - 
 type:CUSTOM
 cn:my.fqdn.at.my.domain
 expiry:2025-10-25T18:08:07Z
 installed:True
-----------------------------------------
 
 ## Upload and Install
 This tool uploads your custom cert to the broker and installs it.
@@ -68,7 +66,7 @@ Uploading your certificate ../testCert.pem to the broker with service ID 'juw0xs
 Uploading...
 Cert was uploaded sucesfully. Installing...
 Cert wasinstalled sucesfully. Fetching ity to double check...
-------------------------
+- - - - 
 Cert uploaded and installed:
 type:CUSTOM
 cn:my.fqdn.at.my.domain
