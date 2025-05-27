@@ -48,31 +48,31 @@ Token file found and loaded.
 Fetching all certs for the broker with service id 'juw0xswqqqee3' through the Solace Home Cloud API...
 1 certificates found on service juw0xswqqqee3
 
-Certificate #1: - - - - - 
-type:CUSTOM
-cn:my.fqdn.at.my.domain
-expiry:2025-10-25T18:08:07Z
-installed:True
+Certificate #1: - - - - -   
+type:CUSTOM  
+cn:my.fqdn.at.my.domain  
+expiry:2025-10-25T18:08:07Z  
+installed:True  
 
 ## Upload and Install
 This tool uploads your custom cert to the broker and installs it.
 > python CertInstall.py --service=juw0xswqqqee3 --token=../token.txt --cert=../testCert.pem --key=../testKey.key --passPhrase=yxtr34fv
 
 **output:**
-Runing CertificateTool version 1.00
-Acting on Solace Cloud Service juw0xswqqqee3
-Token file found and loaded.
-Uploading your certificate ../testCert.pem to the broker with service ID 'juw0xswqqqee3' through the Solace Home Cloud (SaS) API...
-Uploading...
-Cert was uploaded sucesfully. Installing...
-Cert wasinstalled sucesfully. Fetching ity to double check...
-- - - - 
-Cert uploaded and installed:
-type:CUSTOM
-cn:my.fqdn.at.my.domain
-expiry:2025-10-25T18:08:07Z
-installed:True
-Tool completed sucessfully.
+Runing CertificateTool version 1.00  
+Acting on Solace Cloud Service juw0xswqqqee3  
+Token file found and loaded.  
+Uploading your certificate ../testCert.pem to the broker with service ID 'juw0xswqqqee3' through the Solace Home Cloud (SaS) API...  
+Uploading...  
+Cert was uploaded sucesfully. Installing...  
+Cert wasinstalled sucesfully. Fetching it to double check...  
+- - - -  
+Cert uploaded and installed:  
+type:CUSTOM  
+cn:my.fqdn.at.my.domain  
+expiry:2025-10-25T18:08:07Z  
+installed:True  
+Tool completed sucessfully.  
 
 ## Delete
 Solace Cloud will typically only put one certificate on a broker. However, it is possible that you could have extra certificates that have been uploaded, but not installed. In this case, youcan use this delete script to remove a custom cert from a broker. 
@@ -80,11 +80,11 @@ Solace Cloud will typically only put one certificate on a broker. However, it is
 > python CertDelete.py --service=juw0xswqqqee3 --token=../token.txt
 
 **output:**
-Runing CertificateTool version 1.00
-Acting on Solace Cloud Service juw0xswqqqee3
-Token file found and loaded.
-Deleting any uninstalled custom certificates for the broker with service id 'juw0xswqqqee3' through the Solace Home Cloud API...
-1 certificates were deleted on service juw0xswqqqee3
+Runing CertificateTool version 1.00  
+Acting on Solace Cloud Service juw0xswqqqee3  
+Token file found and loaded.  
+Deleting any uninstalled custom certificates for the broker with service id 'juw0xswqqqee3' through the Solace Home Cloud API...  
+1 certificates were deleted on service juw0xswqqqee3  
 
 ## Feedback?
 Send feature requests, defects and comments to (mailto:mike.obrien@solace.com)

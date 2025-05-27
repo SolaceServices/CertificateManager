@@ -34,7 +34,7 @@ class CertInstall(CertToolBase):
       print("Cert was uploaded sucesfully. Installing...")    
       self.solaceCloudAPI.installCertificate(self.service, cert, self.args.passPhrase)
 
-      print("Cert wasinstalled sucesfully. Fetching ity to double check...")    
+      print("Cert wasinstalled sucesfully. Fetching it to double check...")    
       cert = self.solaceCloudAPI.getCustomCertificate(self.service)
       print("------------------------")
       print("Cert uploaded and installed:")
