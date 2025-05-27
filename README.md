@@ -6,6 +6,9 @@ At this time, there is no user interface provided by SOlace to upload custom ser
 
 These toools use the Solace Cloud API (V2). This tool uploads certicates and makes cert related requests to the Solace Home Cloud, which in turn communicates with the broker. 
 
+**IMPORTANT:** This code is NOT officially support Solace product. This tool was created by Mike O'Brien in the Solace Services team to augment Solace product, and is provided as an example. Do not contact the Solace support team to report any issues with this tool. 
+
+
 ## Requirements
 You need to have:
 1) A certificate file, in PEM format, with intermediate CAs inline as part of the file. The following is an example of the file format, with most of the content removed for brevity:
